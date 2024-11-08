@@ -7,6 +7,8 @@ import Portfolio from "../sections/Portfolio";
 import Testimonials from "../sections/Testimonials";
 import Statistics from "../sections/Statistics";
 import Subscribe from "../sections/Subscribe";
+import OurTeam from "../sections/OurTeam";
+import ContactUs from "../sections/ContactUS";
 
 const Home = () => {
   return (
@@ -21,6 +23,8 @@ const Home = () => {
       <Testimonials />
       <Statistics />
       <Subscribe />
+      <OurTeam />
+      <ContactUs />
     </>
   );
 };
