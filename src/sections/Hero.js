@@ -3,8 +3,8 @@ import hero2 from "../assets/hero2.svg";
 export default function Hero() {
   return (
     <section>
-      <div className="flex max-sm:flex-col max-sm:text-center py-20 max-sm:py-5">
-        <div className="max-sm:w-full w-1/2">
+      <div className="flex flex-wrap-reverse max-sm:text-center py-20 max-sm:py-5">
+        <div className="max-sm:w-full w-1/2 mt-10 lg:mt-0">
           <h2 className="lg:text-5xl sm:text-3xl max-sm:text-xl font-bold text-gray-800">
             World class design for your products
           </h2>
@@ -20,7 +20,7 @@ export default function Hero() {
             </button>
           </div>
         </div>
-        <div className="max-sm:hidden w-1/2 mt-10 lg:mt-0">
+        <div className="max-sm:w-full w-1/2">
           <img src={hero2} alt="Hero-img" />
         </div>
       </div>

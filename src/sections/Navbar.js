@@ -1,4 +1,6 @@
 const Navbar = () => {
+  const navs = ["Home", "About", "Services", "Portfolio", "Contact"];
+
   return (
     <section>
       <nav className="container">
@@ -25,20 +27,15 @@ const Navbar = () => {
             </button>
           </li>
           <li className="max-sm:hidden block">
-            <ul className="flex lg:gap-8 gap-1 items-center font-bold">
-              <li className="hover:border-purple-300 border rounded p-2">Home</li>
-              <li className="hover:border-purple-300 border rounded p-2">
-                About
-              </li>
-              <li className="hover:border-purple-300 border rounded p-2">
-                Services
-              </li>
-              <li className="hover:border-purple-300 border rounded p-2">
-                Portfolio
-              </li>
-              <li className="hover:border-purple-300 border rounded p-2">
-                Contact
-              </li>
+            <ul className="flex lg:gap-8 items-center font-bold">
+              {navs.map((item) => (
+                <li
+                  className="hover:border-purple-300 border rounded p-2 max-md:p-1"
+                  key={item}
+                >
+                  {item}
+                </li>
+              ))}
             </ul>
           </li>
           <li className="bg-red-600 text-white text-lg px-2 py-2 rounded font-medium ml-auto flex">
@@ -61,13 +58,13 @@ const Navbar = () => {
             </span>
           </li>
         </ul>
-        {/* <ul className='gap-2 max-sm:block hidden items-center font-bold'>
-              <li className='p-2'>Home</li>
-              <li className='p-2'>About</li>
-              <li className='p-2'>Services</li>
-              <li className='p-2'>Portfolio</li>
-              <li className='p-2'>Contact</li>
-          </ul> */}
+        <ul className="gap-2 max-sm:block hidden items-center font-bold">
+          {navs.map((item) => (
+            <li className="p-2" key={item}>
+              {item}
+            </li>
+          ))}
+        </ul>
       </nav>
     </section>
   );
