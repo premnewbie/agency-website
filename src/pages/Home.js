@@ -3,6 +3,8 @@ import Navbar from "../sections/Navbar";
 import Hero from "../sections/Hero";
 import Services from "../sections/Services";
 import Companies from "../sections/Companies";
+import Portfolio from "../sections/Portfolio";
+import Testimonials from "../sections/Testimonials";
 
 const Home = () => {
   return (
@@ -13,6 +15,8 @@ const Home = () => {
       </div>
       <Services />
       <Companies />
+      <Portfolio />
+      <Testimonials />
     </>
   );
 };

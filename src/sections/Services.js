@@ -65,16 +65,16 @@ export default function Services() {
   return (
     <section className="bg-red-100 rounded-2xl p-5 lg:p-15 mx-auto mb-10">
       <div className="container mx-auto">
-        <div>
+        <div className="py-16 lg:py-28">
           <h2 className="text-center text-5xl max-sm:text-3xl font-bold">Our Services</h2>
-          <p className="w-1/2 mx-auto mt-10">
+          <p className="lg:w-1/2 mx-auto mt-10">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Aspernatur, odio explicabo quidem quia reprehenderit laborum veniam
             unde, sequi deleniti iure pariatur. Assumenda consequuntur inventore
             nesciunt ipsum distinctio hic similique rerum.
           </p>
         </div>
-        <div className="flex flex-wrap mt-10">
+        <div className="flex flex-wrap">
           {headings.map((item) => (
             <Card key={item.heading} heading={item.heading} icon={item.icon} />
           ))}
