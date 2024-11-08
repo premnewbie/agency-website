@@ -5,6 +5,8 @@ import Services from "../sections/Services";
 import Companies from "../sections/Companies";
 import Portfolio from "../sections/Portfolio";
 import Testimonials from "../sections/Testimonials";
+import Statistics from "../sections/Statistics";
+import Subscribe from "../sections/Subscribe";
 
 const Home = () => {
   return (
@@ -17,6 +19,8 @@ const Home = () => {
       <Companies />
       <Portfolio />
       <Testimonials />
+      <Statistics />
+      <Subscribe />
     </>
   );
 };

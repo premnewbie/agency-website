@@ -14,8 +14,8 @@ export default function Testimonials() {
           <div className="grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-10">
             {Array(6)
               .fill(1)
-              .map((item) => (
-                <div className="bg-purple-200 rounded-lg shadow-lg p-5">
+              .map((item,index) => (
+                <div key={index} className="bg-purple-200 rounded-lg shadow-lg p-5">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -41,8 +41,8 @@ export default function Testimonials() {
                   <p className="flex">
                     {Array(5)
                       .fill(1)
-                      .map((item) => (
-                        <svg
+                      .map((item,index) => (
+                        <svg key={index}
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 20 20"
                           fill="currentColor"

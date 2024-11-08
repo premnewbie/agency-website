@@ -19,7 +19,7 @@ export default function Portfolio() {
           {Array(5)
             .fill(1)
             .map((item, index) => (
-              <div
+              <div key={index}
                 className={`w-1/2 max-sm:w-full ${
                   index % 2 === 0 ? "pt-24 max-sm:pt-0" : "py-12"
                 }`}
@@ -32,9 +32,9 @@ export default function Portfolio() {
                       className="rounded-t-3xl"
                     />
                     <div className="p-5 max-sm:p-2">
-                      <p>
-                        <span className="bg-red-200 rounded-3xl border border-red-300 px-2 mr-2">
-                          Design
+                      <p className="flex flex-wrap gap-2">
+                        <span className="bg-red-200 rounded-3xl border border-red-300 px-2">
+                          Branding
                         </span>
                         <span className="bg-green-300 rounded-3xl border border-green-500 px-2">
                           Design
