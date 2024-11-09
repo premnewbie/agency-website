@@ -9,22 +9,29 @@ import Statistics from "../sections/Statistics";
 import Subscribe from "../sections/Subscribe";
 import OurTeam from "../sections/OurTeam";
 import Contact from "../sections/Contact";
+import Blogs from "../sections/Blogs";
+import Gradient from "../sections/Gradient";
+import Footer from "../sections/Footer";
+
 
 const Home = () => {
   return (
     <>
-      <div className="bg-purple-100 rounded-2xl p-5 mx-auto mb-10">
+      <div  className="App lg:p-10 p-5 text-gray-600">
         <Navbar />
         <Hero />
+        <Services />
+        <Companies />
+        <Portfolio />
+        <Testimonials />
+        <Statistics />
+        <Subscribe />
+        <OurTeam />
+        <Contact />
+        <Blogs />
+        <Gradient />
       </div>
-      <Services />
-      <Companies />
-      <Portfolio />
-      <Testimonials />
-      <Statistics />
-      <Subscribe />
-      <OurTeam />
-      <Contact />
+      <Footer />
     </>
   );
 };

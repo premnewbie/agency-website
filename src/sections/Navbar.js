@@ -1,15 +1,18 @@
+import { useState } from "react";
+
 const Navbar = () => {
   const navs = ["Home", "About", "Services", "Portfolio", "Contact"];
+  const [open,setOpen] = useState(false);
 
   return (
-    <section>
+    <section className="bg-purple-100 rounded-t-2xl p-5 pb-0 mx-auto">
       <nav className="container">
         <ul className="flex items-center">
           <li className="font-bold text-xl md:text-2xl pr-5 border-r border-purple-300 mr-5 text-gray-800">
             Agency
           </li>
           <li className="hidden max-sm:block mr-5">
-            <button>
+            <button onClick={() => setOpen(!open)}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -58,13 +61,13 @@ const Navbar = () => {
             </span>
           </li>
         </ul>
-        <ul className="gap-2 max-sm:block hidden items-center font-bold">
+        {open && <ul className="gap-2 max-sm:block hidden items-center font-bold">
           {navs.map((item) => (
             <li className="p-2" key={item}>
               {item}
             </li>
           ))}
-        </ul>
+        </ul>}
       </nav>
     </section>
   );

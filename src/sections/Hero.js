@@ -2,7 +2,7 @@ import hero2 from "../assets/hero2.svg";
 
 export default function Hero() {
   return (
-    <section>
+    <section className="bg-purple-100 rounded-b-2xl p-5 pt-0 mx-auto mb-10">
       <div className="flex flex-wrap-reverse max-sm:text-center py-20 max-sm:py-5">
         <div className="max-sm:w-full w-1/2 mt-10 lg:mt-0">
           <h2 className="lg:text-5xl sm:text-3xl max-sm:text-xl font-bold text-gray-800">
