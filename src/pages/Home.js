@@ -17,7 +17,7 @@ import Footer from "../sections/Footer";
 const Home = () => {
   return (
     <>
-      <div  className="App lg:p-10 p-5 text-gray-600">
+      <div  className="lg:p-10 p-5 text-gray-600">
         <Navbar />
         <Hero />
         <Services />
